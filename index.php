@@ -1,9 +1,55 @@
 <?php
 
 // 以下にCarクラスを定義して、当プログラムを実行した時にエラーがでないようにして下さい。
+class Car 
+{
 
+public $name;
+public $number;
+public $color;
 
+public function __construct($name, $number, $color)
+{
+    $this->name = $name;
+    $this->number = $number;
+    $this->color = $color;
+}
 
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    public function getNumber()
+    {
+        return $this->number;
+    }
+
+    public function getColor()
+    {
+        return $this->color;
+    }
+
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
+    public function setNumber($number)
+    {
+        $this->number = $number;
+    }
+
+    public function setColor($color)
+    {
+        $this->color = $color;
+    }
+    
+    public function infomation()
+    {
+        echo '車の車種:' . $this->name . '、' .  '車体番号:' . $this->number . '、' . 'カラー:' . $this->color . 'です。<br>';
+    }
+}
 
 
 // 以下を実行した時にエラーがでないようにして下さい。
