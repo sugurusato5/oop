@@ -4,16 +4,16 @@
 class Car 
 {
 
-public $name;
-public $number;
-public $color;
+    public $name;
+    public $number;
+    public $color;
 
-public function __construct($name, $number, $color)
-{
+    public function __construct($name, $number, $color)
+    {
     $this->name = $name;
     $this->number = $number;
     $this->color = $color;
-}
+    }
 
     public function getName()
     {
